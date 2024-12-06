@@ -1,0 +1,26 @@
+{
+  "name": "drizzle",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "db:generate" : "drizzle-kit generate",
+    "db:migrate" : "tsx src/drizzle/migrate.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "drizzle-kit": "^0.29.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.37.0",
+    "postgres": "^3.4.5"
+  }
+}
